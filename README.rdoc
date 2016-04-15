@@ -1,0 +1,55 @@
+== README
+
+# ASSIGNMENT BELOW
+
+It's not the most sophisticated codebase I've put together, but it gets its one job done.
+YOU HAD ONE JOB!
+
+There is opportunity for re-factoring, but in the end, everything could stand some
+re-factoring.
+
+Two things that may come through that I plan to fix: Word wrapping. I HATE word wrapping,
+but I clearly don't have my defaults loaded onto this machine yet. I know this, because
+my tab size keeps defaulting to 4 spaces, and I don't think my whitespace is clearing
+when I save. If these things are conveyed in my code, please know they aren't my normal
+settings. I'm still setting up my independent MBP!
+
+Also, I would normally have more tests, and there was likely opportunity for more, but I
+was primarily dealing with a hash of JSON and an external API graph loading. I did want to
+add an error for if the column graph didn't load, but in the end, I decided it wasn't
+worth the effort since the column graph not loading would convey a fairly clear message.
+
+Please feel free to check out my other repositories. There should be at least three
+sample code things I've done lately up there.
+
+
+# ASSIGNMENT: Your homework
+
+PipelineDeals' central goal is to help sales teams manage their deal flow. The Deal is
+the main domain object we care about. Each deal has:
+
+* A deal stage: where is it in the pipeline?
+* A value: how much is the deal worth?
+
+Your challenge is the following: build an app that does one thing - displays a single page,
+containing a column chart. The x-axis is the deal stage, and the y-axis is the total $
+value of deals in that stage.
+
+Simple, right?
+
+## Details
+
+* You'll need an `api_key` to retrieve all deals available to you - it is `G5mZccexXgchNkAYOBlQ`.
+* Every deal has a deal stage, which is included in the deals.json API response
+* A deal stage has a 'percent' field, representing where in the pipeline it sits: 100 = finished.
+* Make sure the deal stage columns in your column chart are ordered by deal stage percentage.
+* Ruby for the backend, whatever you want for the front-end
+* Expect to see specs, at least for the backend.
+
+## Links
+
+Take a look at our API docs: https://www.pipelinedeals.com/api/docs
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
